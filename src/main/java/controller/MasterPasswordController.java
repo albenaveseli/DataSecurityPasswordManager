@@ -36,7 +36,7 @@ public class MasterPasswordController {
                 System.out.println("Encrypted token read: " + encryptedToken);
 
                 if (encryptedToken == null || encryptedToken.trim().isEmpty()) {
-                    // Token bosh, krijo token te ri
+
                     String token = AESCrypto.encrypt("Test123");
                     MasterPasswordManager.saveToken(token);
                 } else {
